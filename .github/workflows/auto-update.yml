@@ -52,8 +52,9 @@ jobs:
         if: steps.is-updated.outputs.updated
         run: |
           git submodule update --init
-          ver=$(git describe --tags --match="v[0-9]*" --abbrev=0 HEAD)
-          git clone --recursive -b "${ver}" --depth=1 https://github.com/CyberTimon/RapidRAW.git
+          git clone https://github.com/CyberTimon/RapidRAW.git
+          ver=$(git -C RapidRAW describe --tags --match="v[0-9]*" --abbrev=0 HEAD)
+          git -C RapidRAW checkout "${ver}"
           flatpak-builder-tools/cargo/flatpak-cargo-generator.py -o cargo-sources.json RapidRAW/src-tauri/Cargo.lock
           flatpak-node-generator --no-requests-cache -r -o node-sources.json npm RapidRAW/package-lock.json
           rm -rf RapidRAW
