@@ -32,7 +32,7 @@ jobs:
         id: is-updated
         run: |
           git status -s -uno
-          [ -z "$(git status -s -uno)" ] || echo "::set-output name=updated::true"
+          [ -z "$(git status -s -uno)" ] || echo "updated=true" >> $GITHUB_OUTPUT
 
       - uses: actions/setup-python@v2
         if: steps.is-updated.outputs.updated
@@ -52,15 +52,16 @@ jobs:
         if: steps.is-updated.outputs.updated
         run: |
           git submodule update --init
-          ver=$(git describe --tags --match="v[0-9]*" --abbrev=0 HEAD)
-          git clone --recursive -b "${ver}" --depth=1 https://github.com/CyberTimon/RapidRAW.git
+          git clone https://github.com/CyberTimon/RapidRAW.git
+          ver=$(git -C RapidRAW describe --tags --match="v[0-9]*" --abbrev=0 HEAD)
+          git -C RapidRAW checkout "${ver}"
           flatpak-builder-tools/cargo/flatpak-cargo-generator.py -o cargo-sources.json RapidRAW/src-tauri/Cargo.lock
           flatpak-node-generator --no-requests-cache -r -o node-sources.json npm RapidRAW/package-lock.json
           rm -rf RapidRAW
 
       - name: Reset
         run: |
-          git checkout -- ${FLATPAK_ID}.yml *.xml
+          git checkout -- ${FLATPAK_ID}.yml
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
         name: Recheck and open PR
