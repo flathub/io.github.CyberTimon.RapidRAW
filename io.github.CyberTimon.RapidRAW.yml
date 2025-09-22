@@ -1,7 +1,7 @@
 id: io.github.CyberTimon.RapidRAW
 
 runtime: org.gnome.Platform
-runtime-version: '48'
+runtime-version: '49'
 sdk: org.gnome.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.rust-stable
@@ -66,8 +66,7 @@ modules:
       - install -Dm644 -t /app/share/applications/ data/io.github.CyberTimon.RapidRAW.desktop
       - install -Dm755 -t /app/bin/ src-tauri/target/release/RapidRAW
 
-      - desktop-file-edit --set-key=Icon --set-value="io.github.CyberTimon.RapidRAW"
-        /app/share/applications/io.github.CyberTimon.RapidRAW.desktop
+      - desktop-file-edit --set-key=Icon --set-value="io.github.CyberTimon.RapidRAW" /app/share/applications/io.github.CyberTimon.RapidRAW.desktop
 
       - install -Dm644 src-tauri/icons/32x32.png /app/share/icons/hicolor/32x32/apps/io.github.CyberTimon.RapidRAW.png
       - install -Dm644 src-tauri/icons/128x128.png /app/share/icons/hicolor/128x128/apps/io.github.CyberTimon.RapidRAW.png
