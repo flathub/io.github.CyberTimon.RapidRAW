@@ -13,6 +13,7 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
   - --share=ipc
+  - --share=network
 
 build-options:
   append-path: /usr/lib/sdk/node24/bin:/usr/lib/sdk/rust-stable/bin
