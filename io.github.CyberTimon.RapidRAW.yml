@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/CyberTimon/RapidRAW.git
-        tag: v1.4.4
-        commit: 7c3a206a52a23323db1adbb2cd9f7f8e1b0252cb
+        tag: v1.4.5
+        commit: c27d069d866958ebdb83f12755bef06caa67b1d7
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
