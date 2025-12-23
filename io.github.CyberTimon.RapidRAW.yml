@@ -31,15 +31,15 @@ modules:
           tag-pattern: ^v([\d.]+)$
 
       - type: file
-        url: https://huggingface.co/CyberTimon/RapidRAW-Models/resolve/main/onnxruntimes/libonnxruntime-linux-x86_64.so?download=true
-        sha256: a6f4b5dc4312d72488d108ad8cbc555c1c52ac58f7f79eb67aa9f73331745192
+        url: https://huggingface.co/CyberTimon/RapidRAW-Models/resolve/main/onnxruntimes-v1.22.0/libonnxruntime-linux-x86_64.so?download=true
+        sha256: 3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673
         dest-filename: libonnxruntime.so
         only-arches:
           - x86_64
 
       - type: file
-        url: https://huggingface.co/CyberTimon/RapidRAW-Models/resolve/main/onnxruntimes/libonnxruntime-linux-aarch64.so?download=true
-        sha256: a423523eb36b843d33c642169f5fd76af586401b440feb199d868d5edfb30b0d
+        url: https://huggingface.co/CyberTimon/RapidRAW-Models/resolve/main/onnxruntimes-v1.22.0/libonnxruntime-linux-aarch64.so?download=true
+        sha256: 0afd69a0ae38c5099fd0e8604dda398ac43dee67cd9c6394b5142b19e82528de
         dest-filename: libonnxruntime.so
         only-arches:
           - aarch64
@@ -53,7 +53,7 @@ modules:
         XDG_CACHE_HOME: /run/build/RapidRAW/flatpak-node/cache
         npm_config_cache: /run/build/RapidRAW/flatpak-node/npm-cache
         npm_config_offline: 'true'
-        ORT_STRATEGY: system
+        CARGO_NET_OFFLINE: 'true'
 
     build-commands:
       - mkdir -p /run/build/RapidRAW/src-tauri/resources
