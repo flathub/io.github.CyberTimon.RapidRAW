@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/CyberTimon/RapidRAW.git
-        #tag: v1.4.8
-        commit: d51634f3978bd21e8206c1ca887c25dc8436a60e
+        tag: v1.4.9
+        commit: 704c916e2fc3e9dc09718a04e706bbe4a16d3e59
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -77,6 +77,5 @@ modules:
 
       - mkdir -p /app/lib/RapidRAW
       - cp -rf src-tauri/resources /app/lib/RapidRAW
-      - cp -rf src-tauri/workflows /app/lib/RapidRAW
 
       - install -Dm644 LICENSE /app/share/licenses/io.github.CyberTimon.RapidRAW/LICENSE
