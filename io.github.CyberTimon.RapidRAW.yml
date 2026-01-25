@@ -24,13 +24,12 @@ modules:
     sources:
       - type: git
         url: https://github.com/CyberTimon/RapidRAW.git
-        #tag: v1.4.8
+        tag: v1.4.9
         commit: 704c916e2fc3e9dc09718a04e706bbe4a16d3e59
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
 
-        tag: v1.4.9
       - type: file
         url: https://huggingface.co/CyberTimon/RapidRAW-Models/resolve/main/onnxruntimes-v1.22.0/libonnxruntime-linux-x86_64.so?download=true
         sha256: 3da6146e14e7b8aaec625dde11d6114c7457c87a5f93d744897da8781e35c673
