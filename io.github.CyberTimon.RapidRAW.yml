@@ -77,5 +77,6 @@ modules:
 
       - mkdir -p /app/lib/RapidRAW
       - cp -rf src-tauri/resources /app/lib/RapidRAW
+      - cp -rf src-tauri/lensfun_db /app/lib/RapidRAW
 
       - install -Dm644 LICENSE /app/share/licenses/io.github.CyberTimon.RapidRAW/LICENSE
