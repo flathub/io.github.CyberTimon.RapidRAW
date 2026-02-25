@@ -2057,6 +2057,13 @@
     },
     {
         "type": "file",
+        "url": "https://registry.npmjs.org/react-toastify/-/react-toastify-11.0.5.tgz",
+        "sha512": "129a87046be7493b4762108f2f130bd3934b636657d095116c074d61ae8152493e6a6cf8c1b28142fa0a4000746ab76f49aad406e638438b35b25b80cd9c2498",
+        "dest-filename": "87046be7493b4762108f2f130bd3934b636657d095116c074d61ae8152493e6a6cf8c1b28142fa0a4000746ab76f49aad406e638438b35b25b80cd9c2498",
+        "dest": "flatpak-node/npm-cache/_cacache/content-v2/sha512/12/9a"
+    },
+    {
+        "type": "file",
         "url": "https://registry.npmjs.org/react-virtualized-auto-sizer/-/react-virtualized-auto-sizer-1.0.26.tgz",
         "sha512": "09b94dca2355c36a3e86c6b9ff8f4d1f6a201b167eb7eddac1e46f352abb4d58c3225c24ee2af895e9dc120e47c47792cf035aad290d922bb4a8948e5edc66e4",
         "dest-filename": "4dca2355c36a3e86c6b9ff8f4d1f6a201b167eb7eddac1e46f352abb4d58c3225c24ee2af895e9dc120e47c47792cf035aad290d922bb4a8948e5edc66e4",
@@ -3712,6 +3719,12 @@
         "contents": "b172e2cd76fb97e0f9f5aa666ff6d4d80bfaa8b1\t{\"key\": \"make-fetch-happen:request-cache:https://registry.npmjs.org/levn/-/levn-0.4.1.tgz\", \"integrity\": \"sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==\", \"time\": 0, \"size\": 7465, \"metadata\": {\"url\": \"https://registry.npmjs.org/levn/-/levn-0.4.1.tgz\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
         "dest-filename": "0bd207e4befdc1899d2abf0d3271f34fd6bd81eaaa9e7f4b005488802bb0",
         "dest": "flatpak-node/npm-cache/_cacache/index-v5/ca/de"
+    },
+    {
+        "type": "inline",
+        "contents": "b1dd9cc4ac2a20e97a11267e31f58c233f0939fc\t{\"key\": \"make-fetch-happen:request-cache:https://registry.npmjs.org/react-toastify/-/react-toastify-11.0.5.tgz\", \"integrity\": \"sha512-EpqHBGvnSTtHYhCPLxML05NLY2ZX0JURbAdNYa6BUkk+amz4wbKBQvoKQAB0ardvSarUBuY4Q4s1sluAzZwkmA==\", \"time\": 0, \"size\": 132789, \"metadata\": {\"url\": \"https://registry.npmjs.org/react-toastify/-/react-toastify-11.0.5.tgz\", \"reqHeaders\": {}, \"resHeaders\": {}}}",
+        "dest-filename": "dcd9b63940d48dfc01d562c0e597387d2d972bd2244fb556f8b9c1923d61",
+        "dest": "flatpak-node/npm-cache/_cacache/index-v5/63/7f"
     },
     {
         "type": "inline",
