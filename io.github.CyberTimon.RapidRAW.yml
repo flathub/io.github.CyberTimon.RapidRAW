@@ -59,7 +59,7 @@ modules:
       - mkdir -p /run/build/RapidRAW/src-tauri/resources
       - cp -rf libonnxruntime.so /run/build/RapidRAW/src-tauri/resources
 
-      - npm ci --offline --legacy-peer-deps
+      - npm ci --offline
       - cargo --offline fetch --manifest-path src-tauri/Cargo.toml --verbose
       - npm run --offline tauri build -- --no-bundle
 
