@@ -24,8 +24,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/CyberTimon/RapidRAW.git
-        tag: v1.5.3
-        commit: fe6809ad757b039b6f09dedb6aec2efce6f4f208
+        tag: v1.5.4
+        commit: a36cfab53c72508a157204a0b59811599a787645
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -59,7 +59,7 @@ modules:
       - mkdir -p /run/build/RapidRAW/src-tauri/resources
       - cp -rf libonnxruntime.so /run/build/RapidRAW/src-tauri/resources
 
-      - npm ci --offline --legacy-peer-deps
+      - npm ci --offline
       - cargo --offline fetch --manifest-path src-tauri/Cargo.toml --verbose
       - npm run --offline tauri build -- --no-bundle
 
