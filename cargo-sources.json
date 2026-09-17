@@ -8,8 +8,8 @@
     {
         "type": "git",
         "url": "https://github.com/cybertimon/rapidraw-dnglab",
-        "commit": "3289454e9a65f5c973594687cca35602fa8181e3",
-        "dest": "flatpak-cargo/git/rapidraw-dnglab-3289454"
+        "commit": "934af4b213a12b95f77d69529627067056066294",
+        "dest": "flatpak-cargo/git/rapidraw-dnglab-934af4b"
     },
     {
         "type": "archive",
@@ -6576,7 +6576,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/rapidraw-dnglab-3289454/rawler\" \"cargo/vendor/rawler\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/rapidraw-dnglab-934af4b/rawler\" \"cargo/vendor/rawler\""
         ]
     },
     {
