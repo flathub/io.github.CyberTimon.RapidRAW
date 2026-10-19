@@ -8,8 +8,8 @@
     {
         "type": "git",
         "url": "https://github.com/cybertimon/rapidraw-dnglab",
-        "commit": "934af4b213a12b95f77d69529627067056066294",
-        "dest": "flatpak-cargo/git/rapidraw-dnglab-934af4b"
+        "commit": "a32bc1ff1f4f3c56d4d3226082f6eb17414f9159",
+        "dest": "flatpak-cargo/git/rapidraw-dnglab-a32bc1f"
     },
     {
         "type": "archive",
@@ -4652,6 +4652,19 @@
     {
         "type": "archive",
         "archive-type": "tar-gzip",
+        "url": "https://static.crates.io/crates/lsdetect/lsdetect-0.3.0.crate",
+        "sha256": "042f46bce4d9622bb7243bb1d18cac317d1df7891d5f648b96590aed3d773e6f",
+        "dest": "cargo/vendor/lsdetect-0.3.0"
+    },
+    {
+        "type": "inline",
+        "contents": "{\"package\": \"042f46bce4d9622bb7243bb1d18cac317d1df7891d5f648b96590aed3d773e6f\", \"files\": {}}",
+        "dest": "cargo/vendor/lsdetect-0.3.0",
+        "dest-filename": ".cargo-checksum.json"
+    },
+    {
+        "type": "archive",
+        "archive-type": "tar-gzip",
         "url": "https://static.crates.io/crates/macro_rules_attribute/macro_rules_attribute-0.2.3.crate",
         "sha256": "b3ae8f6d608c795738406608304d30a2dfbdc8e58e44f7ba43236da5208ded3c",
         "dest": "cargo/vendor/macro_rules_attribute-0.2.3"
@@ -6719,7 +6732,7 @@
     {
         "type": "shell",
         "commands": [
-            "cp -r --reflink=auto \"flatpak-cargo/git/rapidraw-dnglab-934af4b/rawler\" \"cargo/vendor/rawler\""
+            "cp -r --reflink=auto \"flatpak-cargo/git/rapidraw-dnglab-a32bc1f/rawler\" \"cargo/vendor/rawler\""
         ]
     },
     {
