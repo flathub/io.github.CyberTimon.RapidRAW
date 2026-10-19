@@ -5106,7 +5106,7 @@
         "commands": [
             "mkdir -p \"bin/@esbuild\"",
             "cp \".package/@esbuild/linux-arm64@0.28.2/bin/esbuild\" \"bin/@esbuild/linux-arm64@0.28.2\"",
-            "ln -sf \"linux-arm64@0.28.2\" \"bin/esbuild-current\""
+            "ln -sf \"@esbuild/linux-arm64@0.28.2\" \"bin/esbuild-current\""
         ],
         "dest": "flatpak-node/cache/esbuild",
         "only-arches": [
@@ -5118,7 +5118,7 @@
         "commands": [
             "mkdir -p \"bin/@esbuild\"",
             "cp \".package/@esbuild/linux-arm@0.28.2/bin/esbuild\" \"bin/@esbuild/linux-arm@0.28.2\"",
-            "ln -sf \"linux-arm@0.28.2\" \"bin/esbuild-current\""
+            "ln -sf \"@esbuild/linux-arm@0.28.2\" \"bin/esbuild-current\""
         ],
         "dest": "flatpak-node/cache/esbuild",
         "only-arches": [
@@ -5130,7 +5130,7 @@
         "commands": [
             "mkdir -p \"bin/@esbuild\"",
             "cp \".package/@esbuild/linux-ia32@0.28.2/bin/esbuild\" \"bin/@esbuild/linux-ia32@0.28.2\"",
-            "ln -sf \"linux-ia32@0.28.2\" \"bin/esbuild-current\""
+            "ln -sf \"@esbuild/linux-ia32@0.28.2\" \"bin/esbuild-current\""
         ],
         "dest": "flatpak-node/cache/esbuild",
         "only-arches": [
@@ -5142,7 +5142,7 @@
         "commands": [
             "mkdir -p \"bin/@esbuild\"",
             "cp \".package/@esbuild/linux-x64@0.28.2/bin/esbuild\" \"bin/@esbuild/linux-x64@0.28.2\"",
-            "ln -sf \"linux-x64@0.28.2\" \"bin/esbuild-current\""
+            "ln -sf \"@esbuild/linux-x64@0.28.2\" \"bin/esbuild-current\""
         ],
         "dest": "flatpak-node/cache/esbuild",
         "only-arches": [
