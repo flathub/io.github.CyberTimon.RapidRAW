@@ -25,6 +25,13 @@ jobs:
           ref: ${{ matrix.branch }}
 
       - uses: docker://ghcr.io/flathub/flatpak-external-data-checker:latest
+        env:
+          # Workaround for FDC regression: submodule scan runs `git ls-files`
+          # before its own safe.directory handling; trust the uid-1001 checkout.
+          # Remove once fixed upstream.
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: safe.directory
+          GIT_CONFIG_VALUE_0: '*'
         with:
           args: --edit-only ${{ env.FLATPAK_ID }}.yml
 
@@ -72,5 +79,9 @@ jobs:
           GIT_COMMITTER_EMAIL: ${{ env.GIT_USER_EMAIL }}
           EMAIL: ${{ env.GIT_USER_EMAIL }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Same FDC regression workaround as the --edit-only step above.
+          GIT_CONFIG_COUNT: 1
+          GIT_CONFIG_KEY_0: safe.directory
+          GIT_CONFIG_VALUE_0: '*'
         with:
           args: --update --never-fork ${{ env.FLATPAK_ID }}.yml
